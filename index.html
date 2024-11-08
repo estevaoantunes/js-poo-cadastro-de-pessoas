@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pessoas</title>
+    <script>
+        class Pessoa[
+        #nome
+
+        constructor(nome){
+            this.#nome = nome
+        }
+        set setNome(nome){
+            this.#nome = nome;
+        }
+
+        get getNome(){
+            return this.#nome
+        }
+
+        imprimir()
+        {
+            document.getElementById('painelDeRespostas').innerHTML = "Nome " + this.#nome + "</br>"
+        }
+
+        class Main{
+            Main()
+            {
+              alert("Método criado com sucesso!")      
+            }
+        }
+
+        var principal = new Main()
+    </script>
 </head>
 <body>
     <h1>Cadastro de Pessoas</h1>
-    <button>Iniciar</button>
+    <button onclick="principal.Main()">Iniciar</button>
     <div id="painelDeRespostas"></div>
 </body>
 </html>
